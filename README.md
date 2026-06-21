@@ -33,8 +33,9 @@ Do stocks that rose the most over the past year keep outperforming? I test a cla
 **What I found:**
 
 * The momentum strategy outperformed the S&P500 in this backtest with a pretty dramatic CAGR despite the assumed transaction costs.
-* Momentum's max drawdown (-21.7%) was actually \shallower than the S\&P's (-23.9%), higher returns did not come at a higher risk in this universe. Higher return alone doesn't mean lower risk.
+* Momentum's max drawdown (-21.7%) was actually shallower than the S\&P's (-23.9%), higher returns did not come at a higher risk in this universe. Higher return alone doesn't mean lower risk.
 * At 4.6x annual turnover, transaction costs shaved 0.6% off the annual return. Momentum has a high turnover rate by nature, although taking transaction costs into account still yielded higher returns.
+* While the pretty intense CAGR is a shiny number, it's highly likely due to survivorship bias mentioned below because I picked stocks that are currently doing well, meaning in the past 6-12 months they probably also performed stronger than market returns.
 
 I also tested a more aggressive setup with top **3** stocks on a **6-month** signal and it posted much higher gross returns. I picked it *after* seeing which combination looked best. It trades far more and generated much higher returns:
 
@@ -43,6 +44,8 @@ I also tested a more aggressive setup with top **3** stocks on a **6-month** sig
 |Top 5, 12-month (headline)|36.0%|35.4%|4.6x|0.6%|
 |Top 3, 6-month (tuned)|47.0%|46.0%|7.4x|1.1%|
 
+I treat this 3 stock 6 month backtest strategy as an interesting optimization, not a finding.
+
 ## Limitations
 
 * **Survivorship bias:** the 20 tickers are today's well-known winners, chosen because they survived and thrived. A momentum strategy run on a list of known winners is structurally tilted to look good.
@@ -50,6 +53,6 @@ I also tested a more aggressive setup with top **3** stocks on a **6-month** sig
 * **Costs are approximate:** 10 bps lumps commission and slippage into one assumption generated from online estimates and ignores market impact, which would grow with position size.
 * **Execution timing:** I assume I can trade at the same month-end close I measure the signal on, which is mildly optimistic.
 
-Bottom line: suggestive, not tradeable. (Maybe tradeable lol)
+Bottom line: suggestive, not tradeable.
 
 
