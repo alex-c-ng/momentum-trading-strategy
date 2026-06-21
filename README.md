@@ -21,27 +21,27 @@ Do stocks that rose the most over the past year keep outperforming? I test a cla
 
 |Metric|Momentum|S\&P 500|
 |-|-|-|
-|Gross CAGR|\36.0%|\13.5%|
-|Net CAGR (after costs)|\35.4%|\13.5%|
-|Cost drag|\0.6%|\~0%|
-|Annual turnover|\4.6x|\~0x|
-|Net Sharpe|\1.45|\0.90|
-|Net max drawdown|\-21.7%|\-23.9%|
+|Gross CAGR|36.0%|13.5%|
+|Net CAGR (after costs)|35.4%|13.5%|
+|Cost drag|0.6%|~0%|
+|Annual turnover|4.6x|~0x|
+|Net Sharpe|1.45|0.90|
+|Net max drawdown|-21.7%|-23.9%|
 
 !\[Equity curve](equity\_curve\_net.png)
 
 **What I found:**
 
 * The momentum strategy outperformed the S&P500 in this backtest with a pretty dramatic CAGR despite the assumed transaction costs.
-* Momentum's max drawdown (\-21.7%) was actually \shallower] than the S\&P's (\-23.9%), higher returns did not come at a higher risk in this universe. Higher return alone doesn't mean lower risk.
-* At \4.6x annual turnover, transaction costs shaved \0.6% off the annual return. Momentum has a high turnover rate by nature, although taking transaction costs into account still yielded higher returns.
+* Momentum's max drawdown (-21.7%) was actually \shallower than the S\&P's (-23.9%), higher returns did not come at a higher risk in this universe. Higher return alone doesn't mean lower risk.
+* At 4.6x annual turnover, transaction costs shaved 0.6% off the annual return. Momentum has a high turnover rate by nature, although taking transaction costs into account still yielded higher returns.
 
 I also tested a more aggressive setup with top **3** stocks on a **6-month** signal and it posted much higher gross returns. I picked it *after* seeing which combination looked best. It trades far more and generated much higher returns:
 
 |Setup|Gross CAGR|Net CAGR|Annual turnover|Cost drag|
 |-|-|-|-|-|
-|Top 5, 12-month (headline)|\36.0%|\35.4%|\4.6x|\0.6%|
-|Top 3, 6-month (tuned)|\47.0%|\46.0%|\7.4x|\1.1%|
+|Top 5, 12-month (headline)|36.0%|35.4%|4.6x|0.6%|
+|Top 3, 6-month (tuned)|47.0%|46.0%|7.4x|1.1%|
 
 ## Limitations
 
