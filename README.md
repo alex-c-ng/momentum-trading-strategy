@@ -13,7 +13,6 @@ Do stocks that rose the most over the past year keep outperforming? I test a cla
 * **Rule:** each month, hold the 5 highest-momentum stocks, equal-weighted; rebalance monthly.
 * **Benchmark:** buy and hold SPY (S\&P 500 ETF).
 * **Transaction costs:** 10 bps per trade (one-way), charged on actual turnover each rebalance.
-* **No look-ahead:** the pick at each month uses only data available up to that month; the return is earned the *following* month. The `+1` offset in the code is what guarantees I'm not peeking into the future.
 * **Tools:** Python, pandas, yfinance, matplotlib.
 
 ## Results — headline strategy (top 5, 12-month momentum)
