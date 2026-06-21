@@ -15,7 +15,7 @@ Do stocks that rose the most over the past year keep outperforming? I test a cla
 * **Transaction costs:** 10 bps per trade (one-way), charged on actual turnover each rebalance.
 * **Tools:** Python, pandas, yfinance, matplotlib.
 
-## Results — headline strategy (top 5, 12-month momentum)
+## Results: Momentum Trading strategy (top 5, 12-month momentum) vs S&P500
 
 *Net figures are after 10 bps transaction costs.*
 
@@ -28,7 +28,7 @@ Do stocks that rose the most over the past year keep outperforming? I test a cla
 |Net Sharpe|1.45|0.90|
 |Net max drawdown|-21.7%|-23.9%|
 
-!\[Equity curve](equity\_curve\_net.png)
+![Equity curve](https://github.com/alex-c-ng/momentum-trading-strategy/raw/main/equity_curve_net.png)
 
 **What I found:**
 
