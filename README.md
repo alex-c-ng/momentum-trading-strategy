@@ -50,6 +50,6 @@ I also tested a more aggressive setup with top **3** stocks on a **6-month** sig
 * **Costs are approximate:** 10 bps lumps commission and slippage into one assumption generated from online estimates and ignores market impact, which would grow with position size.
 * **Execution timing:** I assume I can trade at the same month-end close I measure the signal on, which is mildly optimistic.
 
-Bottom line: suggestive, not tradeable.(Maybe tradeable lol)
+Bottom line: suggestive, not tradeable. (Maybe tradeable lol)
 
 
